@@ -1,5 +1,5 @@
 # How to import a library into your script
-import cmath
+import math
 
 def calculate_roots(a, b, c):
     # Returns the discriminate as an object to use in our if else statement
@@ -7,9 +7,10 @@ def calculate_roots(a, b, c):
     # Here is where we will calculate the first root using
     # The cmath.sqrt function from the cmath library
     # this will need to be the plus half of the quadratic
-    root_1 = (discriminate)
+    root_1 = float((-b + discriminate) / (2*a))
     # this will need to be the minus half of the quadratic
-    root_2 = (discriminate)
+    root_2 = float((-b - discriminate) / (2*a))
     return root_1, root_2
 # Test your function
+
 print(calculate_roots(1, 1, 1))  # Should print (3.0, 2.0)
